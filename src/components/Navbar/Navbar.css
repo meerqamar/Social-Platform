@@ -28,8 +28,11 @@
 }
 
 .brand-glow {
-  color: var(--primary);
-  text-shadow: 0 0 10px var(--primary-light);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .desktop-actions {

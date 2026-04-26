@@ -25,7 +25,11 @@ const useGigCard = () => {
 
 GigCard.Image = () => {
   const { gig } = useGigCard();
-  return <img src={gig.image} alt={gig.title} className="gig-image" />;
+  return (
+    <div className="gig-image-wrapper">
+      <img src={gig.image} alt={gig.title} className="gig-image" />
+    </div>
+  );
 };
 
 GigCard.Body = ({ children }) => <div className="gig-content">{children}</div>;
