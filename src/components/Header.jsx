@@ -16,7 +16,7 @@ const Header = ({ onNavigate }) => {
     <header className="header">
       <div className="header-container">
         <h1 className="logo" onClick={() => onNavigate('/')} style={{ cursor: 'pointer' }}>
-          NOVA
+          coWorkly
         </h1>
 
         <nav className="nav">

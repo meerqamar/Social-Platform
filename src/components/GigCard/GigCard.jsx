@@ -8,7 +8,7 @@ const GigCardContext = createContext();
 const GigCard = ({ gig, onSaveGig, isSaved, children }) => {
   return (
     <GigCardContext.Provider value={{ gig, onSaveGig, isSaved }}>
-      <div className="gig-card glass-panel" style={{ overflow: 'hidden' }}>
+      <div className="gig-card card-minimal" style={{ overflow: 'hidden' }}>
         {children}
       </div>
     </GigCardContext.Provider>

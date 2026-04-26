@@ -9,8 +9,8 @@
 
 .gig-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-md), var(--glass-shadow);
-  border-color: var(--primary-light);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-color);
 }
 
 .gig-image-wrapper {
@@ -32,7 +32,7 @@
 }
 
 .gig-content {
-  padding: 20px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -44,6 +44,7 @@
   margin: 0 0 12px 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 1.5;
@@ -58,13 +59,13 @@
 }
 
 .tag {
-  background: var(--primary-light);
-  padding: 4px 10px;
-  border-radius: var(--radius-sm);
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--primary);
-  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: none;
 }
 
 .gig-footer {
@@ -72,8 +73,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  padding-top: 16px;
-  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
 }
 
 .footer-right {

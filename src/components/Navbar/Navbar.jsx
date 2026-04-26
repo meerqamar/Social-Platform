@@ -27,10 +27,10 @@ const Navbar = () => {
   };
 
   return (
-    <header className="navbar glass-panel">
+    <header className="navbar card-minimal">
       <div className="navbar-container">
         <NavLink to="/" className="brand" onClick={() => setIsMobileMenuOpen(false)}>
-          <span className="brand-glow">NO</span>VA
+          <span className="brand-glow">co</span>Workly
         </NavLink>
 
         {/* Desktop Nav */}
@@ -80,7 +80,7 @@ const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="mobile-nav glass-panel"
+            className="mobile-nav card-minimal"
           >
             {navLinks.map(link => (
               <NavLink 

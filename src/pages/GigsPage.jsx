@@ -30,21 +30,20 @@ const GigsPage = () => {
   }, [searchQuery]);
 
   return (
-    <div className="main-content" style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+    <div className="main-content" style={{ display: 'flex', flexDirection: 'column', gap: '48px', maxWidth: '1200px', margin: '0 auto', padding: '40px 20px' }}>
       
       <section>
-        <h1 style={{ marginBottom: '24px' }}>NOVA Gig Listings</h1>
+        <h1 style={{ fontSize: '3.5rem', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '40px', color: 'var(--text-color)' }}>coWorkly Gig Listings</h1>
         
         {/* Lab 5 Search Box */}
-        <div style={{ marginBottom: '24px', position: 'relative', maxWidth: '400px' }}>
-          <Search size={20} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
+        <div style={{ marginBottom: '40px', position: 'relative', maxWidth: '400px' }}>
+          <Search size={20} style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
           <input 
             type="text" 
             className="form-input" 
             placeholder="Search 200+ gigs... (Profile me!)"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            style={{ paddingLeft: '40px' }}
           />
         </div>
 

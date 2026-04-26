@@ -33,11 +33,6 @@ const CountdownTimer = () => {
         )}
       </div>
       <button onClick={handleReset}>Reset</button>
-      <p>
-        <strong>Stale Closure Investigation:</strong> If dependency array is [], timeLeft becomes stale inside the closure.
-        The updater form (prev =&gt; prev - 1) fixes it because it receives the current state value at the time of execution,
-        avoiding reliance on the potentially stale timeLeft from the closure.
-      </p>
     </div>
   );
 };
