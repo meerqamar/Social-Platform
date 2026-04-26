@@ -1,16 +1,50 @@
-# React + Vite
+# coWorkly
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **coWorkly** (formerly NOVA), a modern, clean, and minimal platform designed to connect creators and freelancers with clients through professional gig listings.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Core Architecture & UI
+- **Clean & Minimal UI Design**: A sophisticated "Architectural Quietude" aesthetic featuring ample whitespace, clean typography (Inter font), and subtle tonal depth. No heavy drop-shadows or cluttered borders.
+- **Responsive Layouts**: Fully responsive grid layouts ensuring a seamless experience across desktop, tablet, and mobile devices.
+- **Global Theme & Navigation**: Minimalist top navigation bar and unified CSS variables driving consistent design tokens across the app.
 
-## React Compiler
+### Gig Marketplace
+- **Gig Listings Page**: A dedicated marketplace page featuring a sleek grid of gigs.
+- **Search & Filtering**: Search functionality to easily find specific gigs from hundreds of listings.
+- **Optimized Components**: 
+  - `GigCard`: A highly optimized, compound React component pattern (`GigCard.Image`, `GigCard.Body`, `GigCard.Footer`) allowing maximum flexibility without unnecessary re-renders. 
+  - Performance improvements implemented utilizing `React.memo` and `useCallback` to prevent wasteful state updates.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Authentication
+- **User Onboarding**: Minimalist, clean `RegisterPage` and `LoginPage` flows allowing new members to join the coWorkly community.
+- **Session Management**: Lightweight authentication context to manage login states, user avatars, and personalized dashboards.
 
-## Expanding the ESLint configuration
+### React Hooks Lab
+The application includes a collection of advanced React hook implementations demonstrating state management and side-effect handling:
+- **Countdown Timer**: A robust timer component featuring a fix for the classic "Stale Closure" bug using functional state updates.
+- **Character Counter**: Real-time text input tracking.
+- **Typing Indicator**: Debounced user activity tracker.
+- **Order Tracker**: Demonstrating complex state transitions over time.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technology Stack
+- **Frontend Framework**: React 18
+- **Build Tool**: Vite
+- **Styling**: Pure CSS with Custom Properties (Vanilla CSS) for maximum performance and explicit control.
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **Routing**: React Router DOM
+
+## 📦 Getting Started
+
+First, install the dependencies:
+```bash
+npm install
+```
+
+Run the development server:
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
