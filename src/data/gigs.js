@@ -7,6 +7,7 @@ const baseSeedGigs = [
     price: 150,
     deliveryDays: 3,
     tags: ['React', 'Responsive', 'Tailwind'],
+    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop',
   },
   {
     title: 'Professional logo design for your brand',
@@ -16,6 +17,7 @@ const baseSeedGigs = [
     price: 75,
     deliveryDays: 5,
     tags: ['Logo', 'Branding', 'Illustrator'],
+    image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop',
   },
   {
     title: 'SEO optimization for your website',
@@ -25,6 +27,7 @@ const baseSeedGigs = [
     price: 200,
     deliveryDays: 7,
     tags: ['SEO', 'Analytics', 'Marketing'],
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop',
   },
   {
     title: 'Mobile app development with React Native',
@@ -34,6 +37,7 @@ const baseSeedGigs = [
     price: 500,
     deliveryDays: 14,
     tags: ['React Native', 'Mobile', 'iOS'],
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop',
   },
   {
     title: 'Custom WordPress theme development',
@@ -43,6 +47,7 @@ const baseSeedGigs = [
     price: 300,
     deliveryDays: 10,
     tags: ['WordPress', 'PHP', 'CSS'],
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop',
   },
   {
     title: 'Data visualization with D3.js',
@@ -52,17 +57,16 @@ const baseSeedGigs = [
     price: 250,
     deliveryDays: 8,
     tags: ['D3.js', 'Data', 'Charts'],
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop',
   },
 ];
 
 export const gigs = Array.from({ length: 200 }, (_, i) => {
   const baseGig = baseSeedGigs[i % baseSeedGigs.length];
-  const tagsQuery = baseGig.tags[0].toLowerCase().replace(/[^a-z]/g, '');
   
   return {
-    id: i + 1,
     ...baseGig,
+    id: i + 1,
     title: `${baseGig.title} (${i + 1})`,
-    image: `https://loremflickr.com/300/200/${tagsQuery},tech?lock=${i + 1}`,
   };
 });
