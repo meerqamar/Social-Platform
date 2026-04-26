@@ -82,4 +82,16 @@ GigCard.SaveButton = ({ onSaveGig, isSaved, gigId }) => {
 };
 
 // Fix 1 — React.memo on GigCard
-export default React.memo(GigCard);
+const MemoizedGigCard = React.memo(GigCard);
+
+// Re-attach compound components to the memoized version
+MemoizedGigCard.Image = GigCard.Image;
+MemoizedGigCard.Body = GigCard.Body;
+MemoizedGigCard.Title = GigCard.Title;
+MemoizedGigCard.Seller = GigCard.Seller;
+MemoizedGigCard.Tags = GigCard.Tags;
+MemoizedGigCard.Rating = GigCard.Rating;
+MemoizedGigCard.Footer = GigCard.Footer;
+MemoizedGigCard.SaveButton = GigCard.SaveButton;
+
+export default MemoizedGigCard;

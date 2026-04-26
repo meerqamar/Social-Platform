@@ -55,9 +55,14 @@ const baseSeedGigs = [
   },
 ];
 
-export const gigs = Array.from({ length: 200 }, (_, i) => ({
-  id: i + 1,
-  ...baseSeedGigs[i % baseSeedGigs.length],
-  title: `${baseSeedGigs[i % baseSeedGigs.length].title} (${i + 1})`,
-  image: `https://picsum.photos/seed/${i + 1}/300/200`,
-}));
+export const gigs = Array.from({ length: 200 }, (_, i) => {
+  const baseGig = baseSeedGigs[i % baseSeedGigs.length];
+  const tagsQuery = baseGig.tags[0].toLowerCase().replace(/[^a-z]/g, '');
+  
+  return {
+    id: i + 1,
+    ...baseGig,
+    title: `${baseGig.title} (${i + 1})`,
+    image: `https://loremflickr.com/300/200/${tagsQuery},tech?lock=${i + 1}`,
+  };
+});
