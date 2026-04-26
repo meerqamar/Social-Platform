@@ -1,0 +1,30 @@
+.countdown-timer {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.timer-display {
+  font-size: 2em;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.expired {
+  color: red;
+}
+
+.countdown-timer button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.countdown-timer p {
+  margin-top: 20px;
+  font-size: 0.9em;
+  line-height: 1.4;
+}

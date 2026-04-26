@@ -1,0 +1,31 @@
+.saved-gigs-panel {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.saved-gigs-panel h2 {
+  margin: 0 0 16px 0;
+  font-size: 1.2em;
+}
+
+.saved-gigs-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.saved-gigs-panel li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.saved-gigs-panel li:last-child {
+  border-bottom: none;
+}
+
+.saved-gigs-panel p {
+  color: #666;
+  font-style: italic;
+}

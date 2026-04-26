@@ -1,0 +1,20 @@
+.typing-indicator {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.typing-indicator input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.indicator {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
