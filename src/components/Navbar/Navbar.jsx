@@ -30,7 +30,7 @@ const Navbar = () => {
     <header className="navbar glass-panel">
       <div className="navbar-container">
         <NavLink to="/" className="brand" onClick={() => setIsMobileMenuOpen(false)}>
-          <span className="brand-glow">GROW</span>URK
+          <span className="brand-glow">NO</span>VA
         </NavLink>
 
         {/* Desktop Nav */}

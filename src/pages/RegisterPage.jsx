@@ -66,7 +66,7 @@ const RegisterPage = () => {
         animate={{ opacity: 1, scale: 1 }}
         className="auth-form glass-panel"
       >
-        <h2>Join GROWURK</h2>
+        <h2>Join NOVA</h2>
         <p>Create an account to start sharing.</p>
 
         {error && <div className="error-message">{error}</div>}

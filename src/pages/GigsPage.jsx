@@ -33,7 +33,7 @@ const GigsPage = () => {
     <div className="main-content" style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
       
       <section>
-        <h1 style={{ marginBottom: '24px' }}>GROWURK Gig Listings</h1>
+        <h1 style={{ marginBottom: '24px' }}>NOVA Gig Listings</h1>
         
         {/* Lab 5 Search Box */}
         <div style={{ marginBottom: '24px', position: 'relative', maxWidth: '400px' }}>
